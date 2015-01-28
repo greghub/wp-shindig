@@ -60,8 +60,9 @@ function mtdemo_setup() {
 	// This theme supports a variety of post formats.
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'link', 'quote', 'status' ) );
 
-	register_nav_menu( 'main-left', __( 'Main Left', 'mtdemo' ) );
-	register_nav_menu( 'main-right', __( 'Main Right', 'mtdemo' ) );
+	//register_nav_menu( 'main-left', __( 'Main Left', 'mtdemo' ) );
+	//register_nav_menu( 'main-right', __( 'Main Right', 'mtdemo' ) );
+	register_nav_menu( 'main', __( 'Main', 'mtdemo' ) );
 
 	/*
 	 * This theme supports custom background color and image, and here

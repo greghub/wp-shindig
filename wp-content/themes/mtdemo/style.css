@@ -522,12 +522,12 @@ a:hover {
 }
 
 .site-header hgroup {
-	width: 35%;
-	max-height: 270px;
+	width: 290px;
+	max-height: 216px;
 	position: absolute;
 	top: -70px;
-	left: 50%;
-	margin-left: -17.5%;
+	left: 0;
+	margin-left: -19px;
 	z-index: 2;
 }
 
@@ -619,11 +619,11 @@ a:hover {
 	margin: 0;
 	text-align: center;
 	clear: both;
+	float: right;
 }
 
 .main-navigation a {
 	color: #ffffff;
-	text-shadow:0 1px 0 rgba(0, 0, 0, 0.24);
 }
 .main-navigation a:hover {
 	color: #21759b;
@@ -645,11 +645,13 @@ a:hover {
 .main-navigation li {
 	display: inline-block;
 	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 400;
 }
 
 .main-navigation li a {
 	border-bottom: 0;
-	line-height: 3.692307692;
+	line-height: 2;
 	text-transform: uppercase;
 	white-space: nowrap;
 }
@@ -659,8 +661,8 @@ a:hover {
 }
 
 .main-navigation li {
-	margin: 0 20px;
-	margin: 0 6%;
+	padding: 0 20px;
+	padding: 0 1.3571428571rem;
 	position: relative;
 	font-size: 12px;
 	font-size: 0.857142857rem;
@@ -672,14 +674,21 @@ a:hover {
 	float: left;		
 }
 
+.main-navigation > div > ul > li {
+	border-right: #209aba 1px solid;
+}
+
+.main-navigation > div > ul > li:last-child {
+	border: 0;
+}
+
 .main-navigation li ul {
 	display: none;
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	left: -10px;
 	top: 100%;
-	z-index: 1;
+	z-index: 999;
 }
 
 .main-navigation li ul ul {
@@ -714,6 +723,7 @@ a:hover {
 
 .main-navigation li ul li {
 	margin: 0;
+	padding: 0;
 }
 
 .main-navigation li ul li a {
@@ -722,7 +732,7 @@ a:hover {
 	font-size: 0.785714286rem;
 	line-height: 2.181818182;
 	padding: 8px 10px;
-	padding: 0.571428571rem 0.714285714rem;
+	padding: 0.571428571rem 1.214285714rem;
 	width: 180px;
 	width: 12.85714286rem;
 	white-space: normal;

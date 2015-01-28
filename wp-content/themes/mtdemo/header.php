@@ -45,8 +45,7 @@
 	<header id="masthead" class="site-header clearfix" role="banner">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 
-			<?php wp_nav_menu( array( 'theme_location' => 'main-left', 'menu_class' => 'nav-menu' ) ); ?>
-			<?php wp_nav_menu( array( 'theme_location' => 'main-right', 'menu_class' => 'nav-menu' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'nav-menu' ) ); ?>
 
 			<hgroup>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/wp-calendar-logo.png"></a></h1>
