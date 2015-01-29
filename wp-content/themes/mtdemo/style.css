@@ -1950,6 +1950,16 @@ span.back {
 		font-size: 1rem;
 		margin-top: 0 !important;
 		text-align: left;
+		text-transform: uppercase;
+	}
+	.tribe-mobile-day-heading {
+		margin-bottom: 0;
+		margin-top: 2rem;
+	}
+
+	.tribe-events-read-more {		
+		float: left;
+		clear: left;
 	}
 }
 
