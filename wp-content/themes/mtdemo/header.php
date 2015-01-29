@@ -45,12 +45,17 @@
 	<header id="masthead" class="site-header clearfix" role="banner">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 
-			<?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'nav-menu' ) ); ?>
-
 			<hgroup>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/wp-calendar-logo.png"></a></h1>
+				<h1 class="site-title">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img class="desktop logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/wp-calendar-logo.png">
+						<img class="mobile logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/wp-calendar-logo-mobile.png">
+					</a>
+				</h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
+
+			<?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'nav-menu' ) ); ?>
 
 		</nav><!-- #site-navigation -->
 
