@@ -1917,6 +1917,28 @@ span.back {
 	.menu-pssst {
 		float: right;
 	}
+	.mobile-about-copy {
+		padding: 35px 24px;
+		padding: 2.5rem 1.7857142857rem;
+		background: #f7f7f7;
+		position: absolute;
+		z-index: 103;
+		width: 100%;
+		box-sizing: border-box;
+		font-weight: 600;
+		font-size: 16px;
+		font-size: 1.1428571429rem;
+		line-height: 24px;
+		line-height: 1.7857142857rem;
+		text-align: left;
+		font-family: "proxima-nova", sans-serif;
+		color: #222223;
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+		display: none;
+	}
+	.mobile-about-copy a {
+		color: #25a7ca !important;
+	}
 }
 
 /* =Print

@@ -37,7 +37,12 @@ jQuery(document).ready(function($){
 		$(this).toggleClass("open");
 	});
 	$(".menu-button").click(function(){
+		$(".mobile-about-copy").hide();
 		$(".menu-main-menu-container").toggle();
+	});
+	$(".menu-pssst").click(function(){
+		$(".menu-main-menu-container").hide();
+		$(".mobile-about-copy").toggle();
 	});
 })
 </script>
@@ -72,6 +77,10 @@ jQuery(document).ready(function($){
 				<div class="menu-pssst">
 					<i class="mobile-icon pssst-icon"></i>
 				</div>
+			</div>
+			<div class="mobile-about-copy">
+				PSSST...Just in case you were wondering, you're looking at 
+				<a href="https://theeventscalendar.com/">The Events Calendar</a> in action!
 			</div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'nav-menu' ) ); ?>
