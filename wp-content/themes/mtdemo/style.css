@@ -1787,8 +1787,12 @@ span.back {
 @media only screen and (max-device-width: 480px) {
 	.mobile { display: block !important; }
 
-	.desktop, .top, #tribe_events_filters_wrapper, #tribe-events-bar {
+	.desktop, .top, #tribe_events_filters_wrapper, #tribe-events-bar,
+	.site-description {
 		display: none !important;
+	}
+	.site {
+		width: 100%
 	}
 	.site-header hgroup {
 		width: 100%;
@@ -1810,13 +1814,25 @@ span.back {
 	}
 	.main-navigation li {
 		width: 100%;
-		padding: 0 3rem;
-		background: white;
+		padding: 0;
+		background: #f7f7f7;
+		float: none;
 	}
 	.main-navigation li a {
 		color: #209aba;
-		font-size: 2.5rem;
-		padding: 1.2rem 0;
+		font-size: 1.2rem;
+		padding: 0.3rem 1rem;
+	}
+	.menu-main-menu-container {
+		padding: 0.8rem 1rem;	
+		background: #f7f7f7;
+		-moz-box-shadow:    0px 0px 2px 5px #ccc;
+		-webkit-box-shadow: 0px 0px 2px 5px #ccc;
+		box-shadow:         0px 0px 2px 5px #ccc;
+	}
+	.main-navigation > div > ul > li {
+		border-right: 0;
+		border-bottom: 1px solid #e9e9e9;
 	}
 
 /* =Print
