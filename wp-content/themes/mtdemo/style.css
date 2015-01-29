@@ -1939,6 +1939,18 @@ span.back {
 	.mobile-about-copy a {
 		color: #25a7ca !important;
 	}
+
+	#main {
+		padding: 0;
+	}
+	#tribe-events-pg-template {
+		padding: 1rem;
+	}
+	h2.tribe-events-page-title {
+		font-size: 1rem;
+		margin-top: 0 !important;
+		text-align: left;
+	}
 }
 
 /* =Print
