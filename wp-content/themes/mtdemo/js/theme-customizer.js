@@ -29,4 +29,6 @@
 				$( 'body' ).removeClass( 'custom-background-empty custom-background-white' );
 		} );
 	} );
+
+
 } )( jQuery );

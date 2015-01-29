@@ -1785,7 +1785,7 @@ span.back {
 .mobile { display: none !important; }
 .mobile-pssst {display: none;}
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 768px) {
 	.mobile { display: block !important; }
 
 	.desktop, .top, #tribe_events_filters_wrapper, #tribe-events-bar,
