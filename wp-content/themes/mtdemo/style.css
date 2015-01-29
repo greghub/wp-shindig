@@ -1851,15 +1851,34 @@ span.back {
 		width: auto;
 	}
 
-	.sub-menu { display: none !important; }
-	.sub-menu.open { display: block !important; }
-	
+	.menu-item .sub-menu { display: none !important; }
+	.menu-item.open .sub-menu { display: block !important; }
+
+	.menu-item.menu-item-has-children:after {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 9px 6px 0 6px;
+		border-color: #d3d3d3 transparent transparent transparent;
+		content: ' ';
+		position: absolute;
+		right: 5px;
+		top: 18px;
+	}
+	.menu-item.menu-item-has-children.open:after {
+		border-width: 0 6px 9px 6px;
+		border-color: transparent transparent #d3d3d3 transparent;
+	}
+
 	.sub-menu li {
 		background-color: #e9e9e9;
 		border-bottom: 1px solid white;
 	}
 	.sub-menu li:last-child {
 		border: 0;
+	}
+	.main-navigation ul ul:before, .main-navigation ul ul:after {
+		content: none;
 	}
 }
 

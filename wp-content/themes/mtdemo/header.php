@@ -34,7 +34,7 @@
 <script type="text/javascript">
 jQuery(document).ready(function($){
 	$("#menu-main-menu .menu-item-has-children").click(function(e){
-		$(this).find(".sub-menu").toggleClass("open");
+		$(this).toggleClass("open");
 	})
 })
 </script>
