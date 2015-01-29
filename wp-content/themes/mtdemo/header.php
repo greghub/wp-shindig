@@ -35,7 +35,10 @@
 jQuery(document).ready(function($){
 	$("#menu-main-menu .menu-item-has-children").click(function(e){
 		$(this).toggleClass("open");
-	})
+	});
+	$(".menu-button").click(function(){
+		$(".menu-main-menu-container").toggle();
+	});
 })
 </script>
 </head>
@@ -61,6 +64,15 @@ jQuery(document).ready(function($){
 				</h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
+
+			<div class="mobile mobile-nav">
+				<div class="menu-button">
+					<i class="mobile-icon menu-icon"></i> Menu
+				</div>
+				<div class="menu-pssst">
+					<i class="mobile-icon pssst-icon"></i>
+				</div>
+			</div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'main', 'menu_class' => 'nav-menu' ) ); ?>
 
