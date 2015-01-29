@@ -37,12 +37,12 @@ jQuery(document).ready(function($){
 		$(this).toggleClass("open");
 	});
 	$(".menu-button").click(function(){
-		$(".mobile-about-copy").hide();
+		$(".mobile-pssst").hide();
 		$(".menu-main-menu-container").toggle();
 	});
 	$(".menu-pssst").click(function(){
 		$(".menu-main-menu-container").hide();
-		$(".mobile-about-copy").toggle();
+		$(".mobile-pssst").toggle();
 	});
 })
 </script>
@@ -78,7 +78,7 @@ jQuery(document).ready(function($){
 					<i class="mobile-icon pssst-icon"></i>
 				</div>
 			</div>
-			<div class="mobile-about-copy">
+			<div class="mobile-pssst">
 				PSSST...Just in case you were wondering, you're looking at 
 				<a href="https://theeventscalendar.com/">The Events Calendar</a> in action!
 			</div>
