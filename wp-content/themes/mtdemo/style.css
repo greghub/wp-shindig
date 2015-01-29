@@ -1850,6 +1850,10 @@ span.back {
 	.main-navigation li ul li a {
 		width: auto;
 	}
+
+	.sub-menu { display: none !important; }
+	.sub-menu.open { display: block !important; }
+	
 	.sub-menu li {
 		background-color: #e9e9e9;
 		border-bottom: 1px solid white;

@@ -31,6 +31,13 @@
 <?php wp_head(); ?>
 <script type="text/javascript" src="//use.typekit.net/gmf0oou.js"></script>
 <script type="text/javascript" >try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$("#menu-main-menu .menu-item-has-children").click(function(e){
+		$(this).find(".sub-menu").toggleClass("open");
+	})
+})
+</script>
 </head>
 
 <body <?php body_class(); ?>>
