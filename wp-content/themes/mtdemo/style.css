@@ -1785,7 +1785,7 @@ span.back {
 .mobile { display: none !important; }
 .mobile-pssst {display: none;}
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
 	.mobile { display: block !important; }
 
 	.desktop, .top, #tribe_events_filters_wrapper, #tribe-events-bar,
@@ -1853,8 +1853,8 @@ span.back {
 		width: auto;
 	}
 
-	.menu-item .sub-menu { display: none !important; }
-	.menu-item.open .sub-menu { display: block !important; }
+	.main-navigation ul.nav-menu .menu-item .sub-menu { display: none; }
+	.main-navigation ul.nav-menu .menu-item.open .sub-menu { display: block; }
 
 	.menu-item.menu-item-has-children:after {
 		width: 0;
